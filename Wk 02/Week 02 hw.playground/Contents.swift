@@ -1,6 +1,16 @@
 import UIKit
 
+
 var greeting = "Hello, playground"
 
-let actors = Set(["Tom Cruise", "Angelina Jolie", "Dwayne Johnson"])
-print(actors)
+enum Weekday {
+    case monday, tuesday, wednesday, thursday, friday
+}
+
+var day = Weekday.monday
+day = .friday
+
+let surname: String = "Petrov"
+var score: Int = 0
+
+
