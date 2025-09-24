@@ -1,16 +1,14 @@
-import UIKit
+import Foundation
 
+let path = Bundle.main.path(forResource: "artist.txt", ofType: nil)
+let str = try String(contentsOfFile: path!, encoding: .utf8)
+print(str)
 
-var greeting = "Hello, playground"
-
-enum Weekday {
-    case monday, tuesday, wednesday, thursday, friday
+func load(_ file :String) -> String {
+  let path = Bundle.main.path(forResource: file, ofType: nil)
+  let str = try? String(contentsOfFile: path!, encoding: .utf8)
+  return str!
 }
 
-var day = Weekday.monday
-day = .friday
-
-let surname: String = "Petrov"
-var score: Int = 0
-
-
+print(load("artist.txt"))
+print(load("paint.txt"))
