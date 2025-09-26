@@ -3,10 +3,10 @@
 import SwiftUI
 
 @main
-struct ___PACKAGENAME:identifier___App: App {
+struct Week03_App: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+          Page1()
         }
     }
 }
