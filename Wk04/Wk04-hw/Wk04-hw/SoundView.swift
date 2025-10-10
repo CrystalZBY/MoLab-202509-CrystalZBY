@@ -28,9 +28,9 @@ let campingSounds = EnvironSound(sounds: [
 
 struct SoundView: View {
     @State var player: AVAudioPlayer?
-    @State private var players: [AVAudioPlayer?] = []
-    @State private var volumes: [Double] = []
-    @State private var isPlaying: [Bool] = []
+    @State private var players: [AVAudioPlayer?] = [] //multiple sound tracks
+    @State private var volumes: [Double] = [] //adjust volume from 0.0 - 1.0
+    @State private var isPlaying: [Bool] = [] //track play status
     
     var environmentName: String
     var selectedSounds: [SoundItem] {
@@ -72,6 +72,7 @@ struct SoundView: View {
             }
         }
         .navigationTitle(environmentName)
+        //help from SwiftCopilot... maybe not working
         .onAppear {
             players = selectedSounds.map { item in
                 if let url = Bundle.main.url(forResource: item.fileName, withExtension: "mp3") {
@@ -117,3 +118,7 @@ struct SoundItemView: View {
         .cornerRadius(10)
     }
 }
+
+//#Preview {
+//    NavigationSlides.environment(SoundView())
+//}

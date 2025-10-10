@@ -78,5 +78,5 @@ struct SingleSlide: View {
 
 
 #Preview {
-   NavigationSlides()
+    NavigationSlides()
 }
