@@ -19,8 +19,10 @@ struct NavigationSlides: View {
                 Text("White Noises")
                     .font(Font.system(size: 30, weight: .bold))
                     .padding()
+                
                 let name = slides[slideIndex]
                 SingleSlide(name: name)
+                
                 HStack {
                     Button(action: previousItemAction) {
                         Image(systemName: "chevron.left.circle.fill")
@@ -42,7 +44,7 @@ struct NavigationSlides: View {
                 }
             }
         }
-    }
+}        			                						                    
     
     func previousItemAction() {
         if (slideIndex > 0) {
@@ -59,7 +61,7 @@ struct NavigationSlides: View {
 struct SingleSlide: View {
     var name: String
     var body: some View {
-        NavigationLink(destination: SoundView(environmentName: name)){
+        NavigationLink(destination: SingleSoundView(environmentName: name)){
             VStack {
                 Image(name) // Now uses image from Assets
                     .resizable()
