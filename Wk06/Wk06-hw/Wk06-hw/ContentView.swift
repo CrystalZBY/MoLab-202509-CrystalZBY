@@ -42,6 +42,10 @@ struct ContentView: View {
                     username = "Anonymous"
                 }
             }
+            
+            Text("Click on Wooden Fish to gain good fortune!")
+                .font(Font.system(size: 15, weight: .bold))
+                .padding(.top, 15)
             Spacer()
             
             Text("Good fortune")
