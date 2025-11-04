@@ -1,6 +1,8 @@
 import SwiftUI
 
 struct MoodImpactView: View {
+    let emotionLabel: String
+    
     var body: some View {
         
     }
@@ -8,5 +10,5 @@ struct MoodImpactView: View {
 }
 
 #Preview {
-    MoodImpactView()
+    MoodImpactView(emotionLabel: "Pleasant")
 }
