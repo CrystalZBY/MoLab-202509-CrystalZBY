@@ -7,13 +7,13 @@
 	objects = {
 
 /* Begin PBXFileReference section */
-		42B13D972EABBDF7008F6288 /* wk07-hw2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "wk07-hw2.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		42B13D972EABBDF7008F6288 /* wk07-mood tracking.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "wk07-mood tracking.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		42B13D992EABBDF7008F6288 /* wk07-hw2 */ = {
+		42B13D992EABBDF7008F6288 /* wk07-mood tracking */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			path = "wk07-hw2";
+			path = "wk07-mood tracking";
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -32,7 +32,7 @@
 		42B13D8E2EABBDF7008F6288 = {
 			isa = PBXGroup;
 			children = (
-				42B13D992EABBDF7008F6288 /* wk07-hw2 */,
+				42B13D992EABBDF7008F6288 /* wk07-mood tracking */,
 				42B13D982EABBDF7008F6288 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -40,7 +40,7 @@
 		42B13D982EABBDF7008F6288 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				42B13D972EABBDF7008F6288 /* wk07-hw2.app */,
+				42B13D972EABBDF7008F6288 /* wk07-mood tracking.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -48,9 +48,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		42B13D962EABBDF7008F6288 /* wk07-hw2 */ = {
+		42B13D962EABBDF7008F6288 /* wk07-mood tracking */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 42B13DA22EABBDF9008F6288 /* Build configuration list for PBXNativeTarget "wk07-hw2" */;
+			buildConfigurationList = 42B13DA22EABBDF9008F6288 /* Build configuration list for PBXNativeTarget "wk07-mood tracking" */;
 			buildPhases = (
 				42B13D932EABBDF7008F6288 /* Sources */,
 				42B13D942EABBDF7008F6288 /* Frameworks */,
@@ -61,13 +61,13 @@
 			dependencies = (
 			);
 			fileSystemSynchronizedGroups = (
-				42B13D992EABBDF7008F6288 /* wk07-hw2 */,
+				42B13D992EABBDF7008F6288 /* wk07-mood tracking */,
 			);
-			name = "wk07-hw2";
+			name = "wk07-mood tracking";
 			packageProductDependencies = (
 			);
 			productName = "wk07-hw2";
-			productReference = 42B13D972EABBDF7008F6288 /* wk07-hw2.app */;
+			productReference = 42B13D972EABBDF7008F6288 /* wk07-mood tracking.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -85,7 +85,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 42B13D922EABBDF7008F6288 /* Build configuration list for PBXProject "wk07-hw2" */;
+			buildConfigurationList = 42B13D922EABBDF7008F6288 /* Build configuration list for PBXProject "wk07-mood tracking" */;
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -99,7 +99,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				42B13D962EABBDF7008F6288 /* wk07-hw2 */,
+				42B13D962EABBDF7008F6288 /* wk07-mood tracking */,
 			);
 		};
 /* End PBXProject section */
@@ -313,7 +313,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		42B13D922EABBDF7008F6288 /* Build configuration list for PBXProject "wk07-hw2" */ = {
+		42B13D922EABBDF7008F6288 /* Build configuration list for PBXProject "wk07-mood tracking" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				42B13DA02EABBDF9008F6288 /* Debug */,
@@ -322,7 +322,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		42B13DA22EABBDF9008F6288 /* Build configuration list for PBXNativeTarget "wk07-hw2" */ = {
+		42B13DA22EABBDF9008F6288 /* Build configuration list for PBXNativeTarget "wk07-mood tracking" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				42B13DA32EABBDF9008F6288 /* Debug */,
