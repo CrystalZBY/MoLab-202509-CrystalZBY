@@ -11,11 +11,18 @@ import Foundation
 struct MoodEntry: Identifiable, Codable, Hashable {
     let id: UUID
     let emotionLabel: String
+    let feelings: [String]
     let date: Date
     
-    init(id: UUID = UUID(), emotionLabel: String, date: Date = Date()) {
-        self.id = id
-        self.emotionLabel = emotionLabel
-        self.date = date
-    }
+    init(
+            id: UUID = UUID(),
+            emotionLabel: String,
+            feelings: [String],
+            date: Date = Date()
+        ) {
+            self.id = id
+            self.emotionLabel = emotionLabel
+            self.feelings = feelings
+            self.date = date
+        }
 }

@@ -13,9 +13,12 @@ final class MoodStore: ObservableObject {
     private let filename = "mood_history.json"
     
     private var fileURL: URL {
-        let dir = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first!
-        return dir.appendingPathComponent(filename)
-    }
+            FileManager.default
+                .urls(for: .documentDirectory, in: .userDomainMask)
+                .first!
+                .appendingPathComponent(filename)
+        }
+
     
     //encode Swift --> JSON data
     private let encoder: JSONEncoder = {
@@ -35,12 +38,11 @@ final class MoodStore: ObservableObject {
         load()
     }
     
-    func add(emotionLabel: String) {
-        let newEntry = MoodEntry(emotionLabel: emotionLabel)
-        entries.append(newEntry)
-        // Keep newest first (optional)
-        entries.sort { $0.date > $1.date }
-        save()
+    func add(emotionLabel: String, feelings: [String]) {
+        let entry = MoodEntry(emotionLabel: emotionLabel, feelings: feelings)
+            entries.append(entry)
+            entries.sort { $0.date > $1.date }
+            save()
     }
     
     func remove(at offsets: IndexSet) {
