@@ -5,9 +5,11 @@ import Combine //declarative Swift API??
 //class declaration & actor isolation
 @MainActor
 final class MoodStore: ObservableObject {
+    // @Published → whenever entries changes, any view using it will re-render.
+    // private(set) → views can read entries, but only MoodStore can mutate it. This protects your state from accidental external writes.
     @Published private(set) var entries: [MoodEntry] = []
     
-    // You can change the filename if you want
+    // Stores data in the app’s Documents directory (user-specific, backed up by iCloud unless excluded).
     private let filename = "mood_history.json"
     
     private var fileURL: URL {
