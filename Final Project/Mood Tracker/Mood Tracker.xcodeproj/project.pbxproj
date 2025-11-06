@@ -11,14 +11,14 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		42BD60252EBA5B0600A006AF /* wk08.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = wk08.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		42BD60252EBA5B0600A006AF /* Mood Tracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Mood Tracker.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		42BD605D2EBA602900A006AF /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		42BD60272EBA5B0600A006AF /* wk08 */ = {
+		42BD60272EBA5B0600A006AF /* Mood Tracker */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			path = wk08;
+			path = "Mood Tracker";
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -38,7 +38,7 @@
 			isa = PBXGroup;
 			children = (
 				42BD605D2EBA602900A006AF /* README.md */,
-				42BD60272EBA5B0600A006AF /* wk08 */,
+				42BD60272EBA5B0600A006AF /* Mood Tracker */,
 				42BD60262EBA5B0600A006AF /* Products */,
 			);
 			sourceTree = "<group>";
@@ -46,7 +46,7 @@
 		42BD60262EBA5B0600A006AF /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				42BD60252EBA5B0600A006AF /* wk08.app */,
+				42BD60252EBA5B0600A006AF /* Mood Tracker.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -54,9 +54,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		42BD60242EBA5B0600A006AF /* wk08 */ = {
+		42BD60242EBA5B0600A006AF /* Mood Tracker */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 42BD60302EBA5B0800A006AF /* Build configuration list for PBXNativeTarget "wk08" */;
+			buildConfigurationList = 42BD60302EBA5B0800A006AF /* Build configuration list for PBXNativeTarget "Mood Tracker" */;
 			buildPhases = (
 				42BD60212EBA5B0600A006AF /* Sources */,
 				42BD60222EBA5B0600A006AF /* Frameworks */,
@@ -67,13 +67,13 @@
 			dependencies = (
 			);
 			fileSystemSynchronizedGroups = (
-				42BD60272EBA5B0600A006AF /* wk08 */,
+				42BD60272EBA5B0600A006AF /* Mood Tracker */,
 			);
-			name = wk08;
+			name = "Mood Tracker";
 			packageProductDependencies = (
 			);
 			productName = wk08;
-			productReference = 42BD60252EBA5B0600A006AF /* wk08.app */;
+			productReference = 42BD60252EBA5B0600A006AF /* Mood Tracker.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -91,7 +91,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 42BD60202EBA5B0600A006AF /* Build configuration list for PBXProject "wk08" */;
+			buildConfigurationList = 42BD60202EBA5B0600A006AF /* Build configuration list for PBXProject "Mood Tracker" */;
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -105,7 +105,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				42BD60242EBA5B0600A006AF /* wk08 */,
+				42BD60242EBA5B0600A006AF /* Mood Tracker */,
 			);
 		};
 /* End PBXProject section */
@@ -322,7 +322,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		42BD60202EBA5B0600A006AF /* Build configuration list for PBXProject "wk08" */ = {
+		42BD60202EBA5B0600A006AF /* Build configuration list for PBXProject "Mood Tracker" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				42BD602E2EBA5B0800A006AF /* Debug */,
@@ -331,7 +331,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		42BD60302EBA5B0800A006AF /* Build configuration list for PBXNativeTarget "wk08" */ = {
+		42BD60302EBA5B0800A006AF /* Build configuration list for PBXNativeTarget "Mood Tracker" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				42BD60312EBA5B0800A006AF /* Debug */,
