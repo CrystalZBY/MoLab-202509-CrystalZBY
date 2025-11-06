@@ -14,6 +14,11 @@
 ## Problems
 - Had problems going back to the navigation root (ContentView) after clicking Done in MoodSelectView. I tried "dismiss", but it only navigates to the previous view. 
     - Fix: used sheet(isPresented:onDismiss:content:) --> Presents a sheet when a binding to a Boolean value that you provide is true.
+- Had problems showing the time when the MoodEntry is stored in ContentView. 
+    - Fix: realized it was the printing problem. Nothing wrong with JSON.
 
 ## Question
 - AI told me to use Foundation for JSON, which is different from the sample code using @Observable class Document, @Environment to share data model, and struct Model. What are the differences? 
+
+## Next
+- Need to understand JSON more. 

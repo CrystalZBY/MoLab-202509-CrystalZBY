@@ -83,10 +83,10 @@ private struct MoodHistoryRow: View {
 #Preview {
     // Preview with sample data
     let store = MoodStore()
-    store.clearAll()
+//    store.clearAll()
     // Preload a couple of examples for the preview
-    store.add(emotionLabel: "Pleasant", feelings: ["Calm", "Grateful"])
-    store.add(emotionLabel: "Neutral", feelings: [])
+//    store.add(emotionLabel: "Pleasant", feelings: ["Calm", "Grateful"])
+//    store.add(emotionLabel: "Neutral", feelings: [])
     return ContentView()
         .environmentObject(store)
 }

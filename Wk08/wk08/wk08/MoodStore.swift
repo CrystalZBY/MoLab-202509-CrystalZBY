@@ -22,6 +22,7 @@ final class MoodStore: ObservableObject {
     
     //encode Swift --> JSON data
     private let encoder: JSONEncoder = {
+        //create encoder, run once, use over again
         let enc = JSONEncoder()
         enc.outputFormatting = [.prettyPrinted, .withoutEscapingSlashes]
         enc.dateEncodingStrategy = .iso8601
@@ -68,6 +69,9 @@ final class MoodStore: ObservableObject {
     private func load() {
         do {
             let data = try Data(contentsOf: fileURL)
+            print("Load data: \(data)")
+            let dataString = try String(contentsOf: fileURL, encoding: .utf8)
+            print("Load dataString: \(dataString)")
             entries = try decoder.decode([MoodEntry].self, from: data)
             // Keep newest first (optional)
             entries.sort { $0.date > $1.date }
@@ -77,3 +81,4 @@ final class MoodStore: ObservableObject {
         }
     }
 }
+
