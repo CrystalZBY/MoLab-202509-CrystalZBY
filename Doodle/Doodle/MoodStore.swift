@@ -1,0 +1,84 @@
+import Foundation
+import SwiftUI
+import Combine //declarative Swift API??
+
+//class declaration & actor isolation
+@MainActor
+final class MoodStore: ObservableObject {
+    // @Published → whenever entries changes, any view using it will re-render.
+    // private(set) → views can read entries, but only MoodStore can mutate it. This protects your state from accidental external writes.
+    @Published private(set) var entries: [MoodEntry] = []
+    
+    // Stores data in the app’s Documents directory (user-specific, backed up by iCloud unless excluded).
+    private let filename = "mood_history.json"
+    
+    private var fileURL: URL {
+            FileManager.default
+                .urls(for: .documentDirectory, in: .userDomainMask)
+                .first!
+                .appendingPathComponent(filename)
+        }
+
+    
+    //encode Swift --> JSON data
+    private let encoder: JSONEncoder = {
+        //create encoder, run once, use over again
+        let enc = JSONEncoder()
+        enc.outputFormatting = [.prettyPrinted, .withoutEscapingSlashes]
+        enc.dateEncodingStrategy = .iso8601
+        return enc
+    }()
+    
+    private let decoder: JSONDecoder = {
+        let dec = JSONDecoder()
+        dec.dateDecodingStrategy = .iso8601
+        return dec
+    }()
+    
+    init() {
+        load()
+    }
+    
+    func add(emotionLabel: String, feelings: [String]) {
+        let entry = MoodEntry(emotionLabel: emotionLabel, feelings: feelings)
+            entries.append(entry)
+            entries.sort { $0.date > $1.date }
+            save()
+    }
+    
+    func remove(at offsets: IndexSet) {
+        entries.remove(atOffsets: offsets)
+        save()
+    }
+    
+    func clearAll() {
+        entries.removeAll()
+        save()
+    }
+    
+    private func save() {
+        do {
+            let data = try encoder.encode(entries)
+            try data.write(to: fileURL, options: [.atomic, .completeFileProtection])
+            // print("Saved to \(fileURL)")
+        } catch {
+            print("❌ Save failed: \(error)")
+        }
+    }
+    
+    private func load() {
+        do {
+            let data = try Data(contentsOf: fileURL)
+            print("Load data: \(data)")
+            let dataString = try String(contentsOf: fileURL, encoding: .utf8)
+            print("Load dataString: \(dataString)")
+            entries = try decoder.decode([MoodEntry].self, from: data)
+            // Keep newest first (optional)
+            entries.sort { $0.date > $1.date }
+        } catch {
+            // First run: file won’t exist yet—this is fine
+            entries = []
+        }
+    }
+}
+
