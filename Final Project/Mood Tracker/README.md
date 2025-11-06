@@ -11,6 +11,7 @@
 - MoodEntry & MoodStore: JSON files
 - MoodImpactView: select the impact of the feelings & mood (not there yet)
 
+
 ## Problems
 - Had problems going back to the navigation root (ContentView) after clicking Done in MoodSelectView. I tried "dismiss", but it only navigates to the previous view. 
     - Fix: used sheet(isPresented:onDismiss:content:) --> Presents a sheet when a binding to a Boolean value that you provide is true.
@@ -20,5 +21,5 @@
 ## Question
 - AI told me to use Foundation for JSON, which is different from the sample code using @Observable class Document, @Environment to share data model, and struct Model. What are the differences? 
 
-## Next
-- Need to understand JSON more. 
+## Iterations
+### 20251106: done with MoodSelectView & JSON storing & showing history
