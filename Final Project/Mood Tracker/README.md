@@ -11,8 +11,9 @@
 - MoodEntry & MoodStore: JSON files
 - MoodImpactView: select the impact of the feelings & mood (not there yet)
 
-## References
+## Resources
 - [06-ChipsSaveJSON](https://github.com/molab-itp/06-ChipsSaveJSON): helped understand JSON
+- [06-ImageEditDemoJSON](https://github.com/molab-itp/06-ImageEditDemoJSON)
 
 ## Problems
 - Had problems going back to the navigation root (ContentView) after clicking Done in MoodSelectView. I tried "dismiss", but it only navigates to the previous view. 
