@@ -11,14 +11,14 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		42386BC82EBCE5B3000D6501 /* Doodle.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Doodle.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		42386BC82EBCE5B3000D6501 /* Noted.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Noted.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		42386BE22EBCE71C000D6501 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		42386BCA2EBCE5B3000D6501 /* Doodle */ = {
+		42386BCA2EBCE5B3000D6501 /* Noted */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			path = Doodle;
+			path = Noted;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -38,7 +38,7 @@
 			isa = PBXGroup;
 			children = (
 				42386BE22EBCE71C000D6501 /* README.md */,
-				42386BCA2EBCE5B3000D6501 /* Doodle */,
+				42386BCA2EBCE5B3000D6501 /* Noted */,
 				42386BC92EBCE5B3000D6501 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -46,7 +46,7 @@
 		42386BC92EBCE5B3000D6501 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				42386BC82EBCE5B3000D6501 /* Doodle.app */,
+				42386BC82EBCE5B3000D6501 /* Noted.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -54,9 +54,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		42386BC72EBCE5B3000D6501 /* Doodle */ = {
+		42386BC72EBCE5B3000D6501 /* Noted */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 42386BD32EBCE5B5000D6501 /* Build configuration list for PBXNativeTarget "Doodle" */;
+			buildConfigurationList = 42386BD32EBCE5B5000D6501 /* Build configuration list for PBXNativeTarget "Noted" */;
 			buildPhases = (
 				42386BC42EBCE5B3000D6501 /* Sources */,
 				42386BC52EBCE5B3000D6501 /* Frameworks */,
@@ -67,13 +67,13 @@
 			dependencies = (
 			);
 			fileSystemSynchronizedGroups = (
-				42386BCA2EBCE5B3000D6501 /* Doodle */,
+				42386BCA2EBCE5B3000D6501 /* Noted */,
 			);
-			name = Doodle;
+			name = Noted;
 			packageProductDependencies = (
 			);
 			productName = Doodle;
-			productReference = 42386BC82EBCE5B3000D6501 /* Doodle.app */;
+			productReference = 42386BC82EBCE5B3000D6501 /* Noted.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -91,7 +91,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 42386BC32EBCE5B3000D6501 /* Build configuration list for PBXProject "Doodle" */;
+			buildConfigurationList = 42386BC32EBCE5B3000D6501 /* Build configuration list for PBXProject "Noted" */;
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -105,7 +105,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				42386BC72EBCE5B3000D6501 /* Doodle */,
+				42386BC72EBCE5B3000D6501 /* Noted */,
 			);
 		};
 /* End PBXProject section */
@@ -320,7 +320,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		42386BC32EBCE5B3000D6501 /* Build configuration list for PBXProject "Doodle" */ = {
+		42386BC32EBCE5B3000D6501 /* Build configuration list for PBXProject "Noted" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				42386BD12EBCE5B5000D6501 /* Debug */,
@@ -329,7 +329,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		42386BD32EBCE5B5000D6501 /* Build configuration list for PBXNativeTarget "Doodle" */ = {
+		42386BD32EBCE5B5000D6501 /* Build configuration list for PBXNativeTarget "Noted" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				42386BD42EBCE5B5000D6501 /* Debug */,
