@@ -2,8 +2,7 @@
 //encoding: converting a Swift type (struct) --> a data format (JSON); ex. MoodEntry → { "emotionLabel": "Happy", "date": "2025-11-04T10:00:00Z" }
 //decoding: converting data --> back to Swift; ex. { "emotionLabel": "Happy" } → MoodEntry(emotionLabel: "Happy")
 
-
-import Foundation
+import SwiftUI
 
 //identifiable: instances hold the value of an entity with stable identity
 //codable: encode & decode json data

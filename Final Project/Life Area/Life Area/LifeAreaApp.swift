@@ -8,7 +8,9 @@
 import SwiftUI
 
 @main
-struct HeartbeatApp: App {
+struct LifeAreaApp: App {
+    let lifeAreas = ["Sleep", "Food", "Movement", "Nutrition", "Daily Rhythm"]
+    
     var body: some Scene {
         WindowGroup {
             ContentView()

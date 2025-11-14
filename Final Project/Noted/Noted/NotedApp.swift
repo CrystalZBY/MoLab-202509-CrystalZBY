@@ -8,7 +8,7 @@
 import SwiftUI
 
 @main
-struct DoodleApp: App {
+struct NotedApp: App {
     @StateObject private var store = MoodStore()
     var body: some Scene {
         WindowGroup {

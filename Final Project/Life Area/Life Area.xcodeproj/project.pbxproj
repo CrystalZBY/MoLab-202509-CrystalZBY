@@ -7,13 +7,13 @@
 	objects = {
 
 /* Begin PBXFileReference section */
-		42386C1E2EBE3E0D000D6501 /* Heartbeat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Heartbeat.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		42386C1E2EBE3E0D000D6501 /* Life Area.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Life Area.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		42386C202EBE3E0D000D6501 /* Heartbeat */ = {
+		42386C202EBE3E0D000D6501 /* Life Area */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			path = Heartbeat;
+			path = "Life Area";
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -32,7 +32,7 @@
 		42386C152EBE3E0D000D6501 = {
 			isa = PBXGroup;
 			children = (
-				42386C202EBE3E0D000D6501 /* Heartbeat */,
+				42386C202EBE3E0D000D6501 /* Life Area */,
 				42386C1F2EBE3E0D000D6501 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -40,7 +40,7 @@
 		42386C1F2EBE3E0D000D6501 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				42386C1E2EBE3E0D000D6501 /* Heartbeat.app */,
+				42386C1E2EBE3E0D000D6501 /* Life Area.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -48,9 +48,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		42386C1D2EBE3E0D000D6501 /* Heartbeat */ = {
+		42386C1D2EBE3E0D000D6501 /* Life Area */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 42386C292EBE3E10000D6501 /* Build configuration list for PBXNativeTarget "Heartbeat" */;
+			buildConfigurationList = 42386C292EBE3E10000D6501 /* Build configuration list for PBXNativeTarget "Life Area" */;
 			buildPhases = (
 				42386C1A2EBE3E0D000D6501 /* Sources */,
 				42386C1B2EBE3E0D000D6501 /* Frameworks */,
@@ -61,13 +61,13 @@
 			dependencies = (
 			);
 			fileSystemSynchronizedGroups = (
-				42386C202EBE3E0D000D6501 /* Heartbeat */,
+				42386C202EBE3E0D000D6501 /* Life Area */,
 			);
-			name = Heartbeat;
+			name = "Life Area";
 			packageProductDependencies = (
 			);
 			productName = Heartbeat;
-			productReference = 42386C1E2EBE3E0D000D6501 /* Heartbeat.app */;
+			productReference = 42386C1E2EBE3E0D000D6501 /* Life Area.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -85,7 +85,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 42386C192EBE3E0D000D6501 /* Build configuration list for PBXProject "Heartbeat" */;
+			buildConfigurationList = 42386C192EBE3E0D000D6501 /* Build configuration list for PBXProject "Life Area" */;
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -99,7 +99,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				42386C1D2EBE3E0D000D6501 /* Heartbeat */,
+				42386C1D2EBE3E0D000D6501 /* Life Area */,
 			);
 		};
 /* End PBXProject section */
@@ -313,7 +313,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		42386C192EBE3E0D000D6501 /* Build configuration list for PBXProject "Heartbeat" */ = {
+		42386C192EBE3E0D000D6501 /* Build configuration list for PBXProject "Life Area" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				42386C272EBE3E10000D6501 /* Debug */,
@@ -322,7 +322,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		42386C292EBE3E10000D6501 /* Build configuration list for PBXNativeTarget "Heartbeat" */ = {
+		42386C292EBE3E10000D6501 /* Build configuration list for PBXNativeTarget "Life Area" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				42386C2A2EBE3E10000D6501 /* Debug */,

@@ -25,6 +25,7 @@ struct ContentView: View {
                 }
             }
             .navigationTitle("State of Mind")
+            
             .toolbar {
                 ToolbarItem(placement: .topBarTrailing) {
                     Button {
