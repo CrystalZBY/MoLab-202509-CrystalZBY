@@ -1,3 +1,10 @@
+//
+//  ItemModel.swift
+//  Noted
+//
+//  Created by Crystal Zhang on 11/14/25.
+//
+
 //define model to encode/decode
 //encoding: converting a Swift type (struct) --> a data format (JSON); ex. MoodEntry → { "emotionLabel": "Happy", "date": "2025-11-04T10:00:00Z" }
 //decoding: converting data --> back to Swift; ex. { "emotionLabel": "Happy" } → MoodEntry(emotionLabel: "Happy")
@@ -25,4 +32,11 @@ struct MoodEntry: Identifiable, Codable, Hashable {
             self.feelings = feelings
             self.date = date
         }
+}
+
+protocol LogEntry: Identifiable, Codable {
+    var id: UUID { get }
+    var date: Date { get }
+    var notes: String { get }
+    var tags: [String] { get }
 }
