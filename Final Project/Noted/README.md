@@ -24,7 +24,7 @@
 - real-time monitoring heartbeat (simple app on Watch & firebase)
 - (heartbeat animation: if I have time)
 
-##Iterations
+## Iterations
 ### 20251106
 - Successfully figured out JSON with storing mood entry data. 
 ### 20251121
