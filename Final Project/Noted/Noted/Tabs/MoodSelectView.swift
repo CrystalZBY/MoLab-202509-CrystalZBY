@@ -4,7 +4,11 @@ struct MoodSelectView: View {
     let emotionLabel: String
     let finishFlow: () -> Void
 
+<<<<<<< Updated upstream
     @EnvironmentObject private var store: MoodStore
+=======
+    @EnvironmentObject private var store: DataStore
+>>>>>>> Stashed changes
     @Environment(\.dismiss) private var dismiss
     @State private var selectedFeelings: Set<Feeling> = []
 
@@ -128,3 +132,7 @@ private struct FeelingChip: View {
 //#Preview {
 //    MoodSelectView(emotionLabel: "Pleasant", finishFlow: {})
 //}
+<<<<<<< Updated upstream
+=======
+
+>>>>>>> Stashed changes
