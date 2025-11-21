@@ -4,10 +4,12 @@
 
 ## Files
 - Data: JSON data save
-    - EntryCategory: Enum of all LogEntry types
+    - DataStore: store JSON data
     - EntryModel: all LogEntry types
     - LogEntry: Protocal
     - Model: Model struct
+    - ModelJSON: 
+    - SaveLoadJSON: where the JSON things work here
     
 - ContentView: start logging & see previous logs
 - MoodTrackerView: select mood from 5 (very unpleasant, unpleasant, neutral, pleasant, and very pleasant)

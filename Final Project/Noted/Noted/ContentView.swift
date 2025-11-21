@@ -5,11 +5,11 @@ struct ContentView: View {
     @State private var showingLogSheet = false
 
     var body: some View {
-        let moodentries = store.moodEntries
+        let entries = store.moodEntries
         
         NavigationStack {
             Group {
-                if moodentries.isEmpty {
+                if entries.isEmpty {
                     // Nice empty state when there's no data yet
                     ContentUnavailableView(
                         "No Mood Entries Yet",
@@ -35,7 +35,7 @@ struct ContentView: View {
                         Label("Log", systemImage: "plus.circle.fill")
                     }
                 }
-                if moodentries.isEmpty {
+                if entries.isEmpty {
                     ToolbarItem(placement: .topBarLeading) {
                         EditButton()
                     }
