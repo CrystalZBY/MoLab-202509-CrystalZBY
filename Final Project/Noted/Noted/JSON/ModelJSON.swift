@@ -19,7 +19,13 @@ extension Model {
     }
     
     init(JSONfileName fileName: String) {
-        items = []
+        moodEntries = []
+        sleepEntries = []
+        foodEntries = []
+        movementEntries = []
+        nutritionEntries = []
+        rhythmEntries = []
+        
         do {
             self = try loadJSON(Model.self, fileName: fileName)
         } catch {

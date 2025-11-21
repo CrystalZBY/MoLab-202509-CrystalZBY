@@ -1,13 +1,15 @@
 import SwiftUI
 
 struct ContentView: View {
-    @EnvironmentObject private var store: MoodStore
+    @EnvironmentObject private var store: DataStore
     @State private var showingLogSheet = false
 
     var body: some View {
+        let moodentries = store.moodEntries
+        
         NavigationStack {
             Group {
-                if store.entries.isEmpty {
+                if moodentries.isEmpty {
                     // Nice empty state when there's no data yet
                     ContentUnavailableView(
                         "No Mood Entries Yet",
@@ -33,7 +35,7 @@ struct ContentView: View {
                         Label("Log", systemImage: "plus.circle.fill")
                     }
                 }
-                if !store.entries.isEmpty {
+                if moodentries.isEmpty {
                     ToolbarItem(placement: .topBarLeading) {
                         EditButton()
                     }
@@ -82,11 +84,11 @@ private struct MoodHistoryRow: View {
 
 #Preview {
     // Preview with sample data
-    let store = MoodStore()
+    let store = DataStore()
 //    store.clearAll()
     // Preload a couple of examples for the preview
 //    store.add(emotionLabel: "Pleasant", feelings: ["Calm", "Grateful"])
 //    store.add(emotionLabel: "Neutral", feelings: [])
-    return ContentView()
+    ContentView()
         .environmentObject(store)
 }
