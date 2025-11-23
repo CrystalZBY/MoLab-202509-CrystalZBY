@@ -9,7 +9,7 @@ import SwiftUI
 
 @main
 struct NotedApp: App {
-    @StateObject private var store = MoodStore()
+    @StateObject private var store = DataStore()
     var body: some Scene {
         WindowGroup {
             ContentView()

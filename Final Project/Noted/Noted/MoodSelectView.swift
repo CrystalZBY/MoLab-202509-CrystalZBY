@@ -4,7 +4,7 @@ struct MoodSelectView: View {
     let emotionLabel: String
     let finishFlow: () -> Void
 
-    @EnvironmentObject private var store: MoodStore
+    @EnvironmentObject private var store: DataStore
     @Environment(\.dismiss) private var dismiss
     @State private var selectedFeelings: Set<Feeling> = []
 
@@ -128,3 +128,4 @@ private struct FeelingChip: View {
 //#Preview {
 //    MoodSelectView(emotionLabel: "Pleasant", finishFlow: {})
 //}
+
